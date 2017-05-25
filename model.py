@@ -122,7 +122,7 @@ class RNN(object):
                 scope='Trigram')
 
         if self.ensemble:
-            total_logits = tf.concat(1, [unigram_logits, bigram_logits, trigram_logits])
+            total_logits = tf.concat([unigram_logits, bigram_logits, trigram_logits], axis=1)
         elif self.ngram == 1:
             total_logits = unigram_logits
         elif self.ngram == 2:
@@ -137,25 +137,14 @@ class RNN(object):
                 dropout_rate=self.hidden_dropout,
                 activation=tf.nn.relu,
                 scope='Hidden1')
-
-        '''
-        raw_unigram = tf.reduce_sum(tf.one_hot(self.unigram, self.dim_unigram), 1)
-        raw_bigram = tf.reduce_sum(tf.one_hot(self.bigram, self.dim_bigram), 1)
-        raw_trigram = tf.reduce_sum(tf.one_hot(self.trigram, self.dim_trigram), 1)
-        raw_logits = tf.concat(1, [raw_unigram, raw_bigram, raw_trigram])
-
-        print(raw_logits)
-        print(hidden1)
-        
-        concat_logits = tf.concat(1, [hidden1, raw_logits])
-        '''
         
         logits = linear(inputs=hidden1,
             output_dim=self.dim_output, 
             scope='Output')
 
         self.logits = logits 
-        self.losses = tf.reduce_mean(tf.nn.sparse_softmax_cross_entropy_with_logits(logits, self.labels))
+        self.losses = tf.reduce_mean(tf.nn.sparse_softmax_cross_entropy_with_logits(logits=logits,
+            labels=self.labels))
 
         tf.summary.scalar('Loss', self.losses)
         self.variables = tf.trainable_variables()
