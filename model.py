@@ -138,7 +138,7 @@ class RNN(object):
                 activation=tf.nn.relu,
                 scope='Hidden1')
         
-        logits = linear(inputs=hidden1,
+        logits = linear(inputs=total_logits,
             output_dim=self.dim_output, 
             scope='Output')
 

@@ -180,7 +180,7 @@ def get_data(params):
 def experiment(model, dataset, params):
     print('## Training')
     valid_epoch = 5
-    test_epoch = 10
+    test_epoch = 1
     max_top1 = 0
     min_loss = 99999
     max_top5 = 0
