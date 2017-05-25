@@ -18,11 +18,14 @@ Paper will be published at IJCAI 2017 titled as:
 * Gensim
 
 ## Directories
-- data/ : Olympic Name Datasets including raw and cleaned version
-- main.py : Running RNN model with adjustable hyperparameters
-- model.py : Model structure for RNN-LSTM
-- ops.py : Tensorflow ops used in model.py
-- dataset.py : Dataset reading and experiment workflow
+* data/ : Olympic Name Datasets including raw and cleaned version
+* main.py : Running RNN model with adjustable hyperparameters
+* model.py : Model structure for RNN-LSTM
+* ops.py : Tensorflow ops used in model.py
+* dataset.py : Dataset reading and experiment workflow
+* char2vec.py : Making pretrained char2vec
+* preprocess.py : Preprocessing crawled dataset
+* utils.py : Utility for printing
 
-- preprocess.py : Preprocessing crawled dataset
-- 
+## Run code
+$ python main.py
