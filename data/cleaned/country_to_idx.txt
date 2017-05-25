@@ -1,0 +1,95 @@
+Algeria	0
+Argentina	1
+Australia	4
+Austria	5
+Azerbaijan	6
+Bahamas	7
+Belarus	8
+Belgium	9
+Brazil	10
+Bulgaria	11
+Canada	12
+Chile	13
+Chinese Taipei	14
+Colombia	15
+Croatia	16
+Cuba	17
+Czech Republic	18
+Czechoslovakia	19
+Democratic People's Republic Of Korea	20
+Denmark	21
+Egypt	22
+Estonia	23
+Ethiopia	24
+Federal Republic Of Germany (1950-1990, "GER" Since) 	25
+Finland	26
+France	27
+Georgia	28
+German Democratic Republic (1955-1990, 	29
+Germany	30
+Great Britain	31
+Greece	32
+Haiti	35
+Hungary	37
+Iceland	38
+India	40
+Indonesia	41
+Ireland	43
+Islamic Republic Of Iran	44
+Israel	45
+Italy	46
+Jamaica	47
+Japan	48
+Kazakhstan	49
+Kenya	50
+Latvia	53
+Liechtenstein	55
+Lithuania	56
+Malaysia	58
+Mexico	60
+Mixed Team	61
+Mongolia	62
+Montenegro	63
+Morocco	64
+Netherlands	67
+New Zealand	69
+Nigeria	71
+Norway	72
+Pakistan	73
+Paraguay	75
+People's Republic Of China	76
+Peru	77
+Philippines	78
+Poland	79
+Portugal	80
+Puerto Rico	81
+Republic Of Korea	83
+Republic Of Moldova	84
+Romania	85
+Russia	86
+Russian Federation	87
+Saudi Arabia	88
+Serbia	90
+Serbia And Montenegro	91
+Singapore	92
+Slovakia	93
+Slovenia	94
+South Africa	95
+Spain	96
+Sweden	100
+Switzerland	101
+Thailand	104
+Trinidad And Tobago	108
+Tunisia	109
+Turkey	110
+USSR	111
+Uganda	112
+Ukraine	113
+Unified Team (ex USSR)	114
+United States Of America	117
+United Team Of Germany (1956,1960,1964)	118
+Uruguay	119
+Uzbekistan	120
+Venezuela	121
+Yugoslavia	124
+Zimbabwe	126
