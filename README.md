@@ -27,7 +27,7 @@ Paper will be published at IJCAI 2017 titled as:
 * preprocess.py : Preprocessing crawled dataset
 * utils.py : Utility for printing
 
-## Run code
+## Run the code
 ```bash
 $ python main.py
 ```
