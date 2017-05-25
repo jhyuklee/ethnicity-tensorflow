@@ -28,4 +28,6 @@ Paper will be published at IJCAI 2017 titled as:
 * utils.py : Utility for printing
 
 ## Run code
+'''bash
 $ python main.py
+'''
