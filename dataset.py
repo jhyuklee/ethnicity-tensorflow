@@ -78,9 +78,11 @@ def get_ethnicity_data(data_dir, params):
                     name, nationality = line[:-1].split('\t')
                     name = re.sub(r'\ufeff', '', name)    # delete BOM
 
-                    unigram_vector = [unigram2idx[c] for c in name]
-                    bigram_vector= [bigram2idx[c1 + c2] for c1, c2 in zip(*[name[i:] for i in range(2)])]
-                    trigram_vector= [trigram2idx[c1 + c2 + c3] for c1, c2, c3 in zip(*[name[i:] for i in range(3)])]
+                    unigram_vector = [unigram2idx[c] if c in unigram2idx else 0 for c in name]
+                    bigram_vector= [bigram2idx[c1 + c2] if (c1+c2) in bigram2idx else 0
+                            for c1, c2 in zip(*[name[i:] for i in range(2)])]
+                    trigram_vector= [trigram2idx[c1 + c2 + c3] if (c1+c2+c3) in trigram2idx else 0 
+                            for c1, c2, c3 in zip(*[name[i:] for i in range(3)])]
 
                     # label vector
                     nationality = country2idx[nationality]
@@ -107,7 +109,7 @@ def get_ethnicity_data(data_dir, params):
                     train_set = [unigram_set, bigram_set, trigram_set, length_set, labels]
                 elif 'val' in file_name:
                     valid_set = [unigram_set, bigram_set, trigram_set, length_set, labels]
-                elif 'test' in file_name:
+                elif 'ijcai' in file_name: # test
                     test_set = [unigram_set, bigram_set, trigram_set, length_set, labels]
                 else:
                     assert True, 'not allowed file name %s'% file_name

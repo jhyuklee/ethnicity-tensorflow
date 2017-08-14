@@ -7,8 +7,8 @@ import numpy as np
 
 from random import shuffle
 
-category = 'cleaned'
-clean = True
+category = 'raw'
+clean = False
 write = True
 dataset_path = './data/crawl/countryResult.txt'
 unigram_set_path = './data/' + category + '/0_unigram_to_idx.txt'
