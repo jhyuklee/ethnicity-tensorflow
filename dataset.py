@@ -105,7 +105,7 @@ def get_ethnicity_data(data_dir, params):
                         labels.append(nationality)
                     file_len = k + 1
 
-                if 'train' in file_name:
+                if 'train_ch' in file_name:
                     train_set = [unigram_set, bigram_set, trigram_set, length_set, labels]
                 elif 'val' in file_name:
                     valid_set = [unigram_set, bigram_set, trigram_set, length_set, labels]
@@ -181,7 +181,7 @@ def get_data(params):
 
 def experiment(model, dataset, params):
     print('## Training')
-    valid_epoch = 5
+    valid_epoch = 1
     test_epoch = 1
     max_top1 = 0
     min_loss = 99999
