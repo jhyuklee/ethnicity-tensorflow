@@ -1,16 +1,6 @@
 Name Nationality Classification with Recurrent Neural Networks
 ==============================================================
-Implementation of Name Nationality Classification on Olympic Name Dataset
-
-Paper will be published at IJCAI 2017 titled as:
-[Name Nationaltiy Classification with Recurrent Neural Networks]
-
-- Jinhyuk Lee (jinhyuk\_lee@korea.ac.kr)
-- Hyunjae Kim (gamica@sogang.ac.kr)
-- Miyoung Ko (gomi1503@korea.ac.kr)
-- Donghee Choi (choidonghee@korea.ac.kr)
-- Jaehoon Choi (jchoi@kono.ai)
-- Jaewoo Kang (kangj@korea.ac.kr)
+Implementation of the paper, [Name Nationaltiy Classification with Recurrent Neural Networks](https://www.ijcai.org/proceedings/2017/0289) (Lee et al., IJCAI 2017)
 
 ## Requirements
 * Python 3.4.3
